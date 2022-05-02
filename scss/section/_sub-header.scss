@@ -1,0 +1,117 @@
+.header__main {
+
+   .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+.header__logo {
+   padding: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   img{
+      height: 50px;
+   }
+}
+.header__nav {
+   flex: 1 1 auto;
+   width: 100%;
+}
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0 20px;
+}
+.header__nav-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 15px;
+   opacity: .7;
+   transition: all .3s;
+      position: relative;
+      &::after{
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         width: 0%;
+         height: 2px;
+         background: $color-main;
+         transition: all .5s;
+      }
+}
+.header__nav-item:hover{
+   opacity: 1;
+   &::after{
+      width: 100%;
+   }
+}
+.header__nav-icon{
+   width: 36px;
+   height: 36px;
+   background: #bbb;
+   border-radius: 50%;
+   margin-right: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   img{
+      width: 16px;
+   }
+}
+.header__nav-link {
+   padding: 30px 0;
+   color:#000;
+   font-size: 16px;
+   font-weight: 400;
+}
+.header__button {
+   background: $color-main;
+   font-size: 14px;
+   padding:10px 15px;
+   display: block;
+   flex:1 0 auto;
+   margin: 15px 0;
+}
+.button-icon-block{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.header__respons-nav{
+   display: none;
+   margin-right: 10px;
+}
+
+@media (max-width:1050px) {
+   .nav{
+      display: none;
+   }
+   .header__respons-nav{
+      display: block;
+   }
+.header__button {
+   flex:0 0 auto;
+}
+}
+@media (max-width:879px) {
+   .header__respons-nav{
+      display: none;
+   }
+}
+@media (max-width:520px) {
+   .button-icon-block{
+      display: none;
+      margin: 0 auto;
+   }
+   .header__logo img{
+      height: 60px;
+   }
+   .header__main .container{
+      justify-content: center;
+   }
+}

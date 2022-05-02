@@ -11,8 +11,8 @@ if (menuOpen.length > 0) {
 const menuClose = document.querySelectorAll('.menu__close');
 for (let index = 0; index < menuClose.length; index++) {
    const btn = menuClose[index];
+   console.log(222);
    btn.addEventListener("click", function (e) {
-
       if (menu.classList.contains('_open')) {
          menu.classList.remove('_open');
       }

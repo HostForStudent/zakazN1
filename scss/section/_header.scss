@@ -1,12 +1,17 @@
+.header{
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 2;
+   width: 100%;
+   background: #fff;
+   box-shadow: 0 0px 5px #888;
+}
 .header__icon{
    width: 15px;
 }
 .header__info {
    background: $color-main;
-   position: fixed;
-   left: 0;
-   top: 0;
-   width: 100%;
    padding: 15px 0;
    font-size: 16px;
    .container{
@@ -57,7 +62,7 @@ address{
    border-left: 1px solid #ccc;
 }
 .header__respons{
-display: none;
+   display: none;
 align-items: center;
 justify-content:space-between;
 width: 100%;
@@ -66,6 +71,6 @@ width: 100%;
    .header__respons{
       display: flex;
    }
-.header__icons , .header__connection , .header__location
-{display: none;}
+   .header__icons , .header__connection , .header__location
+   {display: none;}
 }

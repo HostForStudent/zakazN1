@@ -40,11 +40,10 @@ h2{
    justify-content: center;
 }
 .social__block {
-   span{
+   span {
       color: #f0506e;
-}
+   } 
 margin-right: 10px;
-
 }
 .social__buttons {
    display: flex;
@@ -57,6 +56,14 @@ margin-right: 10px;
    margin: 10px;
    padding: 10px 20px;
    width: 145px;
+   transition: all .3s;
+   &:hover{
+      transform: translate(-2px, -2px);
+      box-shadow: 2px 2px  7px #777;
+   }
+   &:active{
+      box-shadow: 2px 2px  2px #777;
+   }
    color: #eee;
    &:nth-child(1){
       background: #793BAA;
@@ -78,5 +85,4 @@ margin-right: 10px;
       flex: 0 1 auto;
       justify-content: center;
    }
-   
 }

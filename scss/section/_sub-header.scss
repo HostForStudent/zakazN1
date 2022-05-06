@@ -22,7 +22,7 @@
 .nav {
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: flex-end;
    padding: 0 20px;
 }
 .header__nav-item {
@@ -32,17 +32,18 @@
    margin-right: 15px;
    opacity: .7;
    transition: all .3s;
-      position: relative;
-      &::after{
-         content: '';
-         position: absolute;
-         left: 0;
-         bottom: 0;
-         width: 0%;
-         height: 2px;
-         background: $color-main;
-         transition: all .5s;
-      }
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 4px;
+      border-radius: 50px;
+      background: $color-main;
+      transition: all .5s;
+   }
 }
 .header__nav-item:hover{
    opacity: 1;
@@ -50,7 +51,7 @@
       width: 100%;
    }
 }
-.header__nav-icon{
+.header__nav-icon {
    width: 36px;
    height: 36px;
    background: #bbb;
@@ -58,9 +59,12 @@
    margin-right: 10px;
    display: flex;
    align-items: center;
+   display: flex;
+   align-items: center;
    justify-content: center;
-   img{
-      width: 16px;
+   .material-symbols-outlined{
+      font-size: 26px; 
+      color: #555;
    }
 }
 .header__nav-link {
@@ -76,6 +80,14 @@
    display: block;
    flex:1 0 auto;
    margin: 20px 0;
+   transition: all .3s;
+   &:hover{
+      transform: translate(-2px, -2px);
+      box-shadow: 2px 2px  7px #777;
+   }
+   &:active{
+      box-shadow: 2px 2px  2px #777;
+   }
 }
 .button-icon-block{
    display: flex;

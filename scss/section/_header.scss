@@ -58,6 +58,14 @@ address{
    flex: 0 0 auto;
 }
 .header__icons-item {
+   transition: all .3s;
+   &:hover{
+      opacity: .7;
+   }
+   &:active{
+      opacity: .3;
+      transition: all .01s;
+   }
    padding: 0 10px ;
    border-left: 1px solid #ccc;
 }

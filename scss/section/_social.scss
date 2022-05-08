@@ -55,7 +55,7 @@ h2{
    text-align: center;
    margin: 10px;
    padding: 10px 20px;
-   width: 145px;
+   width: 160px;
    transition: all .3s;
    &:hover{
       transform: translate(-2px, -2px);
@@ -76,6 +76,19 @@ h2{
    }
 }
 
+.social__button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.social__btm-icon {
+   height: 18px;
+margin-right: 10px;
+img {
+width:100%;
+height:100%;
+}
+}
 @media (max-width:910px) {
    .social__row{
       flex-wrap: wrap;

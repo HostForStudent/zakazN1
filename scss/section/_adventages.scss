@@ -1,0 +1,38 @@
+.advantages {
+   padding: 60px 10px;
+   text-align: center;
+   color: #333;
+}
+.advantages__title {
+}.container {
+   
+}
+.cards-slider__title {
+}
+.advantages__row {
+   padding-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.advantages__item {
+padding: 10px;
+}
+.advantages__img {
+   width: 100px;
+   height: 100px;
+   img {
+   width:100%;
+   height:100%;
+   opacity: .6;
+   }
+   margin: 20px auto;
+
+}
+.advantages__name {
+   max-width: 150px;
+   margin: 0 auto;
+   line-height: 160%;
+   font-size: 20px;
+}

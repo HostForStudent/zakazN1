@@ -1,0 +1,57 @@
+.cards-slider {
+   padding: 60px 0 ;
+   background: #fff;
+   & .container{
+      text-align: center;
+   }
+}
+.cards-slider__title {
+   font-size: 30px;
+   font-weight: 300;
+   text-align: center;
+   display: inline-block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 20px;
+   margin-bottom: 40px;
+   span{
+      width: 100%;
+      height: 1px;
+      background: #eee;
+      position: absolute;
+      flex: 1 0 100%;
+      display: block;
+}
+h2{
+   position: relative;
+   z-index: 2;
+   background: #f8f8f8;
+   padding:0 10px;
+   }
+}
+.cards-slider__cards{
+   & >.swiper-slide{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+.cards-swiper__button{
+   padding: 10px 30px;
+   background: $color-main;
+   color:#eee;
+   margin: 0 auto;
+   margin-top: 30px;
+   font-size: 16px;
+   transition: all .3s;
+   display: inline-block;
+   &:hover{
+      opacity: .7;
+   }
+   &:active{
+      opacity: .3;
+      transition: all .01s;
+   }
+}

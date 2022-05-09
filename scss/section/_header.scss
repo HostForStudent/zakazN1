@@ -56,9 +56,24 @@ address{
 }
 .header__icons {
    flex: 0 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .header__icons-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    transition: all .3s;
+   span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+   }
+   button{
+      font-size: 18px;
+   }
    &:hover{
       opacity: .7;
    }

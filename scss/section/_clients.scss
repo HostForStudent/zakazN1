@@ -32,6 +32,7 @@
    margin: 0 auto;
    line-height: 160%;
    font-size: 20px;
+   display: block;
    color: #1e87f0;
 }
 @media (max-width:520px) {
@@ -44,7 +45,6 @@
     .swiper-slide{
       width: 100%;
       display: flex;
-      align-items: center;
       justify-content: center;
    }
    

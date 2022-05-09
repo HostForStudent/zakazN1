@@ -7,10 +7,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!-- favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-   <link rel="manifest" href="img/site.webmanifest">
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
 
    <!-- fonts -->
    <link rel="stylesheet"
@@ -24,7 +24,7 @@
 
    <!-- //css -->
 
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/slider-swiper.min.css">
    <title>Выгодный автокредит в Ташкенте</title>
 </head>
@@ -51,7 +51,7 @@
                      <img src="icons/search.svg" class="header__icon" alt="location">
                   </a>
                   <a href="#" class="header__icons-item">
-                     <img src="icons/ves.svg" class="header__icon" alt="location">
+                     <button class="material-symbols-outlined">balance</button>
                   </a>
                   <a href="#" class="header__icons-item">
                      <img src="icons/dollar.svg" class="header__icon" alt="location">
@@ -325,7 +325,6 @@
                <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__new">new</div>
                   <div class="card__top">top</div>
-                  <div class="card__hot">hot</div>
                   <div class="card__pdv">З ПДВ</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -355,7 +354,7 @@
 
                </div>
                <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
-                  <div class="card__hot">hot</div>
+                  
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
                   <a href="#" class="card__title">Hyundai Sonata LPI SMART 2016</a>
@@ -444,7 +443,6 @@
                <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__new">new</div>
                   <div class="card__top">top</div>
-                  <div class="card__hot">hot</div>
                   <div class="card__pdv">З ПДВ</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -474,7 +472,7 @@
 
                </div>
                <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
-                  <div class="card__hot">hot</div>
+                  
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
                   <a href="#" class="card__title">Hyundai Sonata LPI SMART 2016</a>
@@ -966,7 +964,7 @@
                   <div class="swiper-pagination"></div>
                </div>
 
-               <div class="cards-swiper__button">ВСЕ ПРЕДЛОЖЕНИЯ >>></div>
+               <button class="cards-swiper__button">ВСЕ ПРЕДЛОЖЕНИЯ >>></button>
             </div>
          </section>
 
@@ -978,24 +976,20 @@
                </div>
                <div class="advantages__row">
                   <div data-aos-duration="900" data-aos="fade-up" class="advantages__item">
-                     <div class="advantages__img"><img src="icons/hand-holding-usd.svg" alt="icons"></div>
-                     <div class="advantages__name">Только качественные и проверенные авто</div>
+                     <div class="advantages__img"><img src="icons/ico1.png" alt="icons"></div>
+                     <div class="advantages__name">Минимум документов</div>
+                     <div class="advantages__descr">Вам понадобятся всего один документ - паспорт</div>
                   </div>
                   <div data-aos-duration="900" data-aos="fade-down" class="advantages__item">
-                     <div class="advantages__img"><img src="icons/warehouse.svg" alt="icons"></div>
-                     <div class="advantages__name">Полное сопровождение в РСЦ МВД Украины</div>
+                     <div class="advantages__img"><img src="icons/ico2.png" alt="icons"></div>
+                     <div class="advantages__name">Привлекательные условия</div>
+                     <div class="advantages__descr">У нас действуют специальные партнерские программы с выгодными условиями по кредиту и гибкий график</div>
                   </div>
                   <div data-aos-duration="900" data-aos="fade-up" class="advantages__item">
-                     <div class="advantages__img"><img src="icons/hand-holding-usd.svg" alt="icons"></div>
-                     <div class="advantages__name">Сделка занимает не более 2 часов</div>
-                  </div>
-                  <div data-aos-duration="900" data-aos="fade-down" class="advantages__item">
-                     <div class="advantages__img"><img src="icons/percent.svg" alt="icons"></div>
-                     <div class="advantages__name">Скидки постоянным клиентам</div>
-                  </div>
-                  <div data-aos-duration="900" data-aos="fade-up" class="advantages__item">
-                     <div class="advantages__img"><img src="icons/award.svg" alt="icons"></div>
-                     <div class="advantages__name">Нас рекомендуют</div>
+                     <div class="advantages__img"><img src="icons/ico3.png" alt="icons"></div>
+                     <div class="advantages__name">Досрочное погашение</div>
+                     <div class="advantages__descr">Возможность погасить кредит полностью или частично в любую дату без комиссий</div>
+                     
                   </div>
                </div>
             </div>
@@ -1044,10 +1038,7 @@
          </section>
 
          <section class="map">
-            <iframe
-               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6008.101328504881!2d69.6654818!3d41.1552458!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae4d2ce0d18a5f%3A0x70305f8e864ac382!2s15%20Furkat%20St%2C%20Krasnogorsk!5e0!3m2!1sen!2s!4v1651984506133!5m2!1sen!2s"
-               width="100%" height="500" style="border:0;" allowfullscreen="true" loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div style="position:relative;overflow:hidden;" ><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/?from=api-maps&ll=69.228787%2C41.262379&mode=usermaps&origin=jsapi_2_1_79&um=constructor%3Ae24db8d50b7ab109cb518a5ff519a41f75018ab0c219188288c5132aeb46eae6&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.uz/map-widget/v1/-/CCUFZODNhA" width="100%" height="400" frameborder="1" allowfullscreen="false" style="position:relative;"></iframe></div>
          </section>
 
          <footer class="footer">

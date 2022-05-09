@@ -27,11 +27,11 @@
 .header__location {
    img{
       margin-right: 10px;
-   }display: flex;
+   }
+   display: flex;
    align-items: center;
    justify-content: center;
-   
-flex: 0 0 auto;
+   flex: 0 0 auto;
 }
 address{
    font-style: normal;
@@ -84,9 +84,9 @@ address{
 }
 .header__respons{
    display: none;
-align-items: center;
-justify-content:space-between;
-width: 100%;
+   align-items: center;
+   justify-content:space-between;
+   width: 100%;
 }
 @media (max-width:879px) {
    .header__respons{
@@ -132,7 +132,6 @@ width: 100%;
          content: '';
          position: absolute;
          background: #000;
-
       }
       &::after{
          transform: rotate(45deg);

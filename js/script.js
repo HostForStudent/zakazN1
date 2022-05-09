@@ -22,20 +22,6 @@ new Swiper('.swiper-slide-big', {
       disableOnInteraction: true,
    },
 })
-new Swiper('.swiper-slide-small', {
-   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-   },
-   grabCursor: true,
-   loop: true,
-   speed: 1000,
-   autoplay: {
-      delay: 5000,
-      stopOnLastSlide: false,
-      disableOnInteraction: true,
-   },
-})
 new Swiper('.cards-swiper-slide', {
    navigation: {
       nextEl: ".swiper-button-next",

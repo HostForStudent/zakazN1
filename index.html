@@ -19,7 +19,11 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 
+   <!-- aos animation scrol -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
    <!-- //css -->
+
    <link rel="stylesheet" href="css/style.min.css">
    <link rel="stylesheet" href="css/slider-swiper.min.css">
    <title>Выгодный автокредит в Ташкенте</title>
@@ -318,7 +322,7 @@
             <div class="cards__row">
 
 
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__new">new</div>
                   <div class="card__top">top</div>
                   <div class="card__hot">hot</div>
@@ -350,7 +354,7 @@
                   </div>
 
                </div>
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__hot">hot</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -379,7 +383,7 @@
                   </div>
 
                </div>
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__top">top</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -408,7 +412,7 @@
                   </div>
 
                </div>
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__new">new</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -437,7 +441,7 @@
                   </div>
 
                </div>
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__new">new</div>
                   <div class="card__top">top</div>
                   <div class="card__hot">hot</div>
@@ -469,7 +473,7 @@
                   </div>
 
                </div>
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__hot">hot</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -498,7 +502,7 @@
                   </div>
 
                </div>
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__top">top</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -527,7 +531,7 @@
                   </div>
 
                </div>
-               <div class="cards__card card">
+               <div class="cards__card card" data-aos="flip-left" data-aos-duration="1200" data-aos-offset="0">
                   <div class="card__new">new</div>
 
                   <div class="card__img"><img src="img/cards/card.jpg" alt="img"></div>
@@ -565,19 +569,81 @@
             <div class="container">
 
                <div class="forms">
-                  <div class="form">
+                  <div data-aos-duration="1200" data-aos="zoom-in-right" class="form">
                      <h3 class="form__title">Купить автомобиль</h3>
                      <h4 class="form__item-name">Кузов</h4>
                      <div class="form__item">
-                        <select name="met" >
+                        <select name="met">
                            <option value="1">Хетчбек</option>
                            <option value="2">Кроссовер</option>
                            <option value="3">Седан</option>
                            <option selected value="4">Универсал</option>
                         </select>
                      </div>
+
+                     <h4 class="form__item-name">Год выпуска</h4>
+                     <div class="renge-wrapper">
+                        <div class="slider">
+                           <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                           <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                           <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                        <div class="price-input">
+                           <div class="field">
+                              <span>От</span>
+                              <input type="number" class="input-min" value="2500">
+                           </div>
+                           <div class="field">
+                              <span>К</span>
+                              <input type="number" class="input-max" value="7500">
+                           </div>
+                        </div>
+                     </div>
+                     <h4 class="form__item-name">Километраж</h4>
+                     <div class="renge-wrapper">
+                        <div class="slider">
+                           <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                           <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                           <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                        <div class="price-input">
+                           <div class="field">
+                              <span>От</span>
+                              <input type="number" class="input-min" value="2500">
+                           </div>
+                           <div class="field">
+                              <span>К</span>
+                              <input type="number" class="input-max" value="7500">
+                           </div>
+                        </div>
+                     </div>
+                     <h4 class="form__item-name">Цена</h4>
+                     <div class="renge-wrapper">
+                        <div class="slider">
+                           <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                           <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                           <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                        <div class="price-input">
+                           <div class="field">
+                              <span>От</span>
+                              <input type="number" class="input-min" value="2500">
+                           </div>
+                           <div class="field">
+                              <span>К</span>
+                              <input type="number" class="input-max" value="7500">
+                           </div>
+                        </div>
+                        <button class="form__button">Продать автомобиль</button>
+                     </div>
                   </div>
-                  <div class="form">
+                  <div data-aos-duration="1200" data-aos="zoom-in-left" class="form">
                      <h3 class="form__title">Купить автомобиль</h3>
                      <h4 class="form__item-name">Марка</h4>
                      <div class="form__item">
@@ -597,7 +663,7 @@
                      </div>
 
 
-                     <h4 class="form__item-name">Контактные данные</h4>
+                     <h4 class="form__item-name form__item-name-row">Контактные данные</h4>
                      <div class="form__list">
                         <div class="form__item">
                            <input type="text" placeholder="Ваше Имя">
@@ -911,23 +977,23 @@
                   <h2>НАШИ ПРЕИМУЩЕСТВА</h2> <span></span>
                </div>
                <div class="advantages__row">
-                  <div class="advantages__item">
+                  <div data-aos-duration="900" data-aos="fade-up" class="advantages__item">
                      <div class="advantages__img"><img src="icons/hand-holding-usd.svg" alt="icons"></div>
                      <div class="advantages__name">Только качественные и проверенные авто</div>
                   </div>
-                  <div class="advantages__item">
+                  <div data-aos-duration="900" data-aos="fade-down" class="advantages__item">
                      <div class="advantages__img"><img src="icons/warehouse.svg" alt="icons"></div>
                      <div class="advantages__name">Полное сопровождение в РСЦ МВД Украины</div>
                   </div>
-                  <div class="advantages__item">
+                  <div data-aos-duration="900" data-aos="fade-up" class="advantages__item">
                      <div class="advantages__img"><img src="icons/hand-holding-usd.svg" alt="icons"></div>
                      <div class="advantages__name">Сделка занимает не более 2 часов</div>
                   </div>
-                  <div class="advantages__item">
+                  <div data-aos-duration="900" data-aos="fade-down" class="advantages__item">
                      <div class="advantages__img"><img src="icons/percent.svg" alt="icons"></div>
                      <div class="advantages__name">Скидки постоянным клиентам</div>
                   </div>
-                  <div class="advantages__item">
+                  <div data-aos-duration="900" data-aos="fade-up" class="advantages__item">
                      <div class="advantages__img"><img src="icons/award.svg" alt="icons"></div>
                      <div class="advantages__name">Нас рекомендуют</div>
                   </div>
@@ -1029,6 +1095,15 @@
    </div>
 
    <script src="js/slider-swiper.min.js"></script>
+   <script src="js/renge.js"></script>
+
+   <!-- aos animation scrol -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+
+
    <script src="js/script.js"></script>
 </body>
 

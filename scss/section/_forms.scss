@@ -5,9 +5,10 @@
 }
 .forms {
    display: flex;
-   align-items: center;
+   align-items: stretch;
    justify-content: center;
    flex-wrap: wrap;
+   overflow: hidden;
 }
 .form {
    text-align: center;
@@ -15,7 +16,7 @@
    background: #fff;
    max-width: 560px;
    margin: 20px;
-   flex: 1 0 auto;
+   flex: 1 1 auto;
 }
 .form__title {
    font-size: 24px;
@@ -24,7 +25,9 @@
    margin: 20px;
    font-size: 16px;
 }
-
+.form__item-name-row{
+   margin-top: 80px;
+}
 .form__item {
    margin: 20px 10px;
    input,select{
@@ -37,6 +40,11 @@
          border: 1px solid rgb(4, 113, 214);
          background: #eee;
       }
+   }
+}
+@media (max-width:678px) {
+   .form__list{
+      flex-direction: column;
    }
 }
 .form__list .form__item{

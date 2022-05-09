@@ -115,13 +115,21 @@ position: relative;
       color: $color-main;
    }
 }
-.slider__body-button {
+button.slider__body-button {
 padding: 10px 25px;
 font-size: 17px;
 display: inline-block;
 background: $color-main;
 margin-top: 20px;
 color: #333;
+
+transition: all .3s;
+&:hover{background: rgb(232, 166, 0);
+}
+&:active{
+   opacity: .3;
+   transition: all .01s;
+}
 }
 
 .slider .swiper-pagination {
@@ -139,6 +147,7 @@ div.slider__body {
 }
 .swiper-slide  img{
 max-width: 320px;
+position:relative;
 }}
 
 @media (min-width:1001px) {

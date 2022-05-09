@@ -810,13 +810,25 @@ body .swiper-button-prev:after {
   color: #f3bb04;
 }
 
-.slider__body-button {
+button.slider__body-button {
   padding: 10px 25px;
   font-size: 17px;
   display: inline-block;
   background: #f3bb04;
   margin-top: 20px;
   color: #333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+button.slider__body-button:hover {
+  background: #e8a600;
+}
+
+button.slider__body-button:active {
+  opacity: .3;
+  -webkit-transition: all .01s;
+  transition: all .01s;
 }
 
 .slider .swiper-pagination {
@@ -833,6 +845,7 @@ body .swiper-button-prev:after {
   }
   .swiper-slide img {
     max-width: 320px;
+    position: relative;
   }
 }
 

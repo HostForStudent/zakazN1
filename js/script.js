@@ -136,4 +136,19 @@ for (let index = 0; index < menuClose.length; index++) {
    })
 }
 
-
+const searchBtn= document.querySelector('.search');
+const searchInput= document.querySelector('.search-input');
+const closeSearch= document.querySelector('.close-search');
+if(searchBtn){
+   if(!searchInput.classList.contains("_open")){
+      searchBtn.addEventListener("click",function(e){
+         searchInput.classList.add("_open");
+      })
+   }
+}
+if(closeSearch){
+   if(!searchInput.classList.contains("_open")){
+   closeSearch.addEventListener("click",function(e){
+      searchInput.classList.remove("_open");
+   })}
+}

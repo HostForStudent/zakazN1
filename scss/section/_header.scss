@@ -59,7 +59,7 @@ address{
    display: flex;
    align-items: center;
    justify-content: center;
-   transition: all .3s;
+   position: relative;
    span{
       display: flex;
       align-items: center;
@@ -69,12 +69,15 @@ address{
    button{
       font-size: 18px;
    }
+   img{
+   transition: all .3s;
    &:hover{
       opacity: .7;
    }
    &:active{
       opacity: .3;
       transition: all .01s;
+   }
    }
    padding: 0 10px ;
    border-left: 1px solid #ccc;
@@ -91,4 +94,51 @@ width: 100%;
    }
    .header__icons , .header__connection , .header__location
    {display: none;}
+}
+.search-input{
+   opacity: 0;
+   visibility: hidden;
+   transform: translate(20px);
+   transition: all .3s;
+   &._open{
+   visibility: visible;
+   opacity: 1;
+   transform: translate(0px);
+   }
+   position: absolute;
+   right: 100%;
+   input{
+      padding: 5px 15px;
+      padding-right: 30px;
+      font-size: 14px;
+      border: 2px solid #888;
+      border-radius: 5px;
+      &:focus{
+         opacity: 1;
+         border: 2px solid rgb(8, 58, 255);
+      }
+   }
+   span{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      z-index: 2;
+      &::before,
+      &::after{
+         width: 90%;
+         height: 2px;
+         content: '';
+         position: absolute;
+         background: #000;
+
+      }
+      &::after{
+         transform: rotate(45deg);
+      }
+      &::before{
+         transform: rotate(-45deg);
+      }
+   }
 }

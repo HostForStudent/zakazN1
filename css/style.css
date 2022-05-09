@@ -237,8 +237,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  position: relative;
   padding: 0 10px;
   border-left: 1px solid #ccc;
 }
@@ -259,11 +258,16 @@ address {
   font-size: 18px;
 }
 
-.header__icons-item:hover {
+.header__icons-item img {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header__icons-item img:hover {
   opacity: .7;
 }
 
-.header__icons-item:active {
+.header__icons-item img:active {
   opacity: .3;
   -webkit-transition: all .01s;
   transition: all .01s;
@@ -289,6 +293,64 @@ address {
   .header__icons, .header__connection, .header__location {
     display: none;
   }
+}
+
+.search-input {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(20px);
+          transform: translate(20px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  right: 100%;
+}
+
+.search-input._open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+}
+
+.search-input input {
+  padding: 5px 15px;
+  padding-right: 30px;
+  font-size: 14px;
+  border: 2px solid #888;
+  border-radius: 5px;
+}
+
+.search-input input:focus {
+  opacity: 1;
+  border: 2px solid #083aff;
+}
+
+.search-input span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 2;
+}
+
+.search-input span::before, .search-input span::after {
+  width: 90%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background: #000;
+}
+
+.search-input span::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.search-input span::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .menu {

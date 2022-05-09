@@ -122,14 +122,17 @@ for (let index = 0; index < menuClose.length; index++) {
    })
 }
 
-const searchBtn= document.querySelector('.search');
+const searchBtns= document.querySelectorAll('.search');
 const searchInput= document.querySelector('.search-input');
 const closeSearch= document.querySelector('.close-search');
-if(searchBtn){
+if(searchBtns.length>0){
+   for(let index = 0 ; index < searchBtns.length ; index++){
+   const searchBtn = searchBtns[index];
    if(!searchInput.classList.contains("_open")){
       searchBtn.addEventListener("click",function(e){
          searchInput.classList.add("_open");
       })
+   }
    }
 }
 if(closeSearch){
